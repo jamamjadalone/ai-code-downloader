@@ -1,0 +1,41 @@
+/* Download button styling */
+.code-download-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  background: #4a5568;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-download-btn:hover {
+  background: #2d3748;
+}
+
+pre, code, .highlight, [class*="language-"] {
+  position: relative;
+}
+
+pre:hover > .code-download-btn,
+code:hover > .code-download-btn,
+.highlight:hover > .code-download-btn,
+[class*="language-"]:hover > .code-download-btn {
+  opacity: 1;
+}
+
+/* Ensure code blocks have proper spacing */
+pre {
+  padding-top: 2em !important;
+}
